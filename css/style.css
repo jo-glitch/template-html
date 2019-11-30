@@ -50,6 +50,37 @@ body {
     line-height: 2.2em
 }
 
+#face a:hover {
+    background-color: #3b5998;
+    border-radius: 50%;
+}
+#pic a:hover {
+    background-color: #BD081C;
+    border-radius: 50%;
+}
+#twit a:hover {
+    background-color: #0084b4;
+    border-radius: 50%;
+}
+#drib a:hover {
+    background-color: #e8534e;
+    border-radius: 50%;
+}
+#link a:hover {
+    background-color: #2867B2;
+    border-radius: 50%;
+}
+#goo a:hover {
+    background-color: #dd4b39;
+    border-radius: 50%;
+}
+#sky a:hover {
+    background-color: #3b5998;
+    border-radius: 50%;
+}
+
+
+
 #header-main-title {
     margin: 45px 0
 }
@@ -233,10 +264,11 @@ header > nav a {
     color: white;
     padding: 5px 0 5px 10px;
     text-transform: uppercase;
+    font-size: 19px;
 }
 
 #middle-actus-main {
-    display: flex;
+    display: flex
 }
 
 #middle-actus-main > .actu-content {
@@ -348,16 +380,17 @@ header > nav a {
     background-image: url('../assets/images/middle-actu-bottom-item-2.jpg');
 }
 
-#bottom-actus-section{
-    margin:50px 0;
+#bottom-actus-section {
+    margin: 50px 0; 
 }
 
-#bottom-actus-section > nav{
+
+#bottom-actus-section > nav {
     background-color: #222;
     height: 35px;
 }
 
-#bottom-actus-section input[type="button"]{
+#bottom-actus-section input[type="button"] {
     border: none;
     background-color: #222;
     color: white;
@@ -366,32 +399,82 @@ header > nav a {
     font-size: 19px;
 }
 
-#bottom-actus-section input[type="button"]:hover{
+#bottom-actus-section input[type="button"]:hover {
     background-color: orange;
 }
 
-/*Bottom*/
+.contenu-bottom {
+    display: flex;
+    justify-content: space-between; 
+   
+}
+.contenu-bottom > div {
+    
+    /* border: 2px black solid; */
 
-.bottom-actus-item{
-    width: 20%;
-    height: 190px;
-    margin-top: 60px;
-    /* border: 1px solid; */
-    margin-left: 1%;
+    width: 500px;
+    height: auto; 
+    margin: 50px 0;
+   padding: 10px;
+    
+    width: 100%;
+    height: auto;
+    
+      
+    
 }
 
-.bottom-actus-item-img{
-    background-image: url('../assets/images/middle-actu-bottom-item-2.jpg');
-    width: 270px;
-    height: 100%;
-    background-size: cover
+.contenu-bottom img {
+    width: 100%;
+    height: auto;
+
 }
 
-.bottom-actus-item > h3{
-    font-size: 2em;
+
+#slider-bottom-section {
+    margin-bottom: 100px;
 }
 
-.bottom-actus-item-right{
-    /* border: 1px solid; */
-    width: 137%;
+#menu-nav-slider {
+    border: 1px solid;
+    display: flex;
+    justify-content :space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    height: 30px;
+}
+
+#menu-nav-slider h2 {
+    margin:0;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.slider-bottom-nav-fa {
+    background-color: orange;
+    font-size: 10px;
+    padding: 10px 7px;
+    margin-top: 2px;
+    margin-left: -3px;
+    font-weight: bolder;
+    
+
+}
+
+#slider-bottom-ctnr {
+    display: flex;
+}
+
+.slider-bottom-img-ctnr {
+    margin-left: 50px;
+}
+
+.slider-bottom-img-ctnr img {
+    width: 250px;
+    height: 180px;
+}
+.contenu-bottom, span {
+    color: grey;
 }
