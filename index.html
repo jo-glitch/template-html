@@ -6,6 +6,7 @@
         <meta charset='utf-8' />
         <meta name="viewport" content="width=device-width, user-scalable=no"/>
         <link rel='stylesheet' href='css/style.css'/>
+        <link rel="icon" type="image/png" href="no-img copie.png" />
     </head>
 	
     <body>
@@ -20,13 +21,13 @@
                         <a href="#">Login</a>
                     </nav>
                     <div id='s-n-icons'>
-                        <div id="face"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
-                        <div id="pic"><a href="#"><i class="fab fa-pinterest"></i></a></div>
-                        <div id="twit"><a href="#"><i class="fab fa-twitter"></i></a></div>
-                        <div id="drib"><a href="#"><i class="fab fa-dribbble"></i></a></div>
-                        <div id="link"><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
-                        <div id="goo"><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
-                        <div id="sky"><a href="#"><i class="fab fa-skype"></i></a></div>
+                        <div><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                        <div><a href="#"><i class="fab fa-pinterest"></i></a></div>
+                        <div><a href="#"><i class="fab fa-twitter"></i></a></div>
+                        <div><a href="#"><i class="fab fa-dribbble"></i></a></div>
+                        <div><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+                        <div><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+                        <div><a href="#"><i class="fab fa-skype"></i></a></div>
                     </div>
                 </div>
                 
@@ -274,89 +275,250 @@
             </section>
 
             <section id='bottom-actus-section'>
-                <nav>
-                    <input type='button' value='Press'/>
-                    <input type='button' value='Actus'/>
-                    <input type='button' value="Plus d'infos"/>
-                </nav>
-            </section>
-
-            <section id='bottom-down-actus'>
                 
-                <div class='contenu-bottom'>
-                        
-                    <div>
+                <input checked type='radio' name="bottom-actus-section-nav" value='bottom-actus-press'/>
+                <input type='radio' name="bottom-actus-section-nav" value='bottom-actus-actus'/>
+                <input type='radio' name="bottom-actus-section-nav" value='bottom-actus-infos'/>
+    
+                <nav>
+                    <input type='button' value='Press' id='bottom-actus-press-btn'/>
+                    <input type='button' value='Actus' id='bottom-actus-actus-btn'/>
+                    <input type='button' value="Plus d'infos" id='bottom-actus-infos-btn'/>
+                </nav>
+                
+                <div>
+                    <div class='bottom-actus-item bottom-actus-item-press'>
                         <img src='http://upload.wikimedia.org/wikipedia/commons/e/e2/Aleksandr_Grinchuk_at_Red_Bull_Racing_Formula_One_Show_Almaty.jpg' alt='Article principal mis en avant'/>
-                        <h2>Titre de l'article principal</h2>
-                        <p id='text-para'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
-                        <i class="far fa-calendar-alt"></i>
-                        <span>26 Nov 2019</span>
-                        <i class="fas fa-comments"></i>
-                        <span class='actu-comments'>25 comments</span>
+    
+    
+                        <div class='bottom-actus-item-content'>
+                            <h3>Titre de l'article principal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
+                            <div class='actu-date-and-comments'>
+                                <div>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>26 Nov 2019</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                    <span class='actu-comments'>25 comments</span>
+                                </div>
+                            </div>
+                            <a href='#'>En savoir plus</a>    
+                        </div>
                     </div>
-                    <div>
+
+                    <div class='bottom-actus-item bottom-actus-item-press'>
                         <img src='http://upload.wikimedia.org/wikipedia/commons/e/e2/Aleksandr_Grinchuk_at_Red_Bull_Racing_Formula_One_Show_Almaty.jpg' alt='Article principal mis en avant'/>
-                        <h2>Titre de l'article principal</h2>
-                        <p id='text-para'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
-                        <i class="far fa-calendar-alt"></i>
-                        <span>26 Nov 2019</span>
-                        <i class="fas fa-comments"></i>
-                        <span class='actu-comments'>25 comments</span>
+    
+    
+                        <div class='bottom-actus-item-content'>
+                            <h3>Titre de l'article principal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
+                            <div class='actu-date-and-comments'>
+                                <div>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>26 Nov 2019</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                    <span class='actu-comments'>25 comments</span>
+                                </div>
+                            </div>
+                            <a href='#'>En savoir plus</a>    
+                        </div>
                     </div>
-                    <div>
+
+                    <div class='bottom-actus-item bottom-actus-item-press'>
                         <img src='http://upload.wikimedia.org/wikipedia/commons/e/e2/Aleksandr_Grinchuk_at_Red_Bull_Racing_Formula_One_Show_Almaty.jpg' alt='Article principal mis en avant'/>
-                        <h2>Titre de l'article principal</h2>
-                        <p id='text-para'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
-                        <i class="far fa-calendar-alt"></i>
-                        <span>26 Nov 2019</span>
-                        <i class="fas fa-comments"></i>
-                        <span class='actu-comments'>25 comments</span>
+    
+    
+                        <div class='bottom-actus-item-content'>
+                            <h3>Titre de l'article principal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
+                            <div class='actu-date-and-comments'>
+                                <div>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>26 Nov 2019</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                    <span class='actu-comments'>25 comments</span>
+                                </div>
+                            </div>
+                            <a href='#'>En savoir plus</a>    
+                        </div>
                     </div>
-                           
-                </div>  
-                       
+
+                    <div class='bottom-actus-item bottom-actus-item-actus'>
+                        <img src='assets/images/bottom-actus-actus-1.jpg' alt='Article principal mis en avant'/>
+    
+    
+                        <div class='bottom-actus-item-content'>
+                            <h3>Titre de l'article principal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
+                            <div class='actu-date-and-comments'>
+                                <div>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>26 Nov 2019</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                    <span class='actu-comments'>25 comments</span>
+                                </div>
+                            </div>
+                            <a href='#'>En savoir plus</a>    
+                        </div>
+                    </div>
+
+                    <div class='bottom-actus-item bottom-actus-item-actus'>
+                        <img src='assets/images/bottom-actus-actus-2.jpg' alt='Article principal mis en avant'/>
+    
+    
+                        <div class='bottom-actus-item-content'>
+                            <h3>Titre de l'article principal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
+                            <div class='actu-date-and-comments'>
+                                <div>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>26 Nov 2019</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                    <span class='actu-comments'>25 comments</span>
+                                </div>
+                            </div>
+                            <a href='#'>En savoir plus</a>    
+                        </div>
+                    </div>
+
+                    <div class='bottom-actus-item bottom-actus-item-actus'>
+                        <img src='assets/images/bottom-actus-actus-3.jpg' alt='Article principal mis en avant'/>
+    
+    
+                        <div class='bottom-actus-item-content'>
+                            <h3>Titre de l'article principal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
+                            <div class='actu-date-and-comments'>
+                                <div>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>26 Nov 2019</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                    <span class='actu-comments'>25 comments</span>
+                                </div>
+                            </div>
+                            <a href='#'>En savoir plus</a>    
+                        </div>
+                    </div>
+
+                    <div class='bottom-actus-item bottom-actus-item-infos'>
+                        <img src='assets/images/bottom-actus-infos-1.jpg' alt='Article principal mis en avant'/>
+    
+    
+                        <div class='bottom-actus-item-content'>
+                            <h3>Titre de l'article principal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
+                            <div class='actu-date-and-comments'>
+                                <div>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>26 Nov 2019</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                    <span class='actu-comments'>25 comments</span>
+                                </div>
+                            </div>
+                            <a href='#'>En savoir plus</a>    
+                        </div>
+                    </div>
+
+                    <div class='bottom-actus-item bottom-actus-item-infos'>
+                        <img src='assets/images/bottom-actus-infos-2.jpg' alt='Article principal mis en avant'/>
+    
+    
+                        <div class='bottom-actus-item-content'>
+                            <h3>Titre de l'article principal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
+                            <div class='actu-date-and-comments'>
+                                <div>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>26 Nov 2019</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                    <span class='actu-comments'>25 comments</span>
+                                </div>
+                            </div>
+                            <a href='#'>En savoir plus</a>    
+                        </div>
+                    </div>
+
+                    <div class='bottom-actus-item bottom-actus-item-infos'>
+                        <img src='assets//images/bottom-actus-infos-3.jpg' alt='Article principal mis en avant'/>
+    
+    
+                        <div class='bottom-actus-item-content'>
+                            <h3>Titre de l'article principal</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nemo praesentium veritatis debitis deleniti magnam earum.</p>
+                            <div class='actu-date-and-comments'>
+                                <div>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>26 Nov 2019</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-comments"></i>
+                                    <span class='actu-comments'>25 comments</span>
+                                </div>
+                            </div>
+                            <a href='#'>En savoir plus</a>    
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id='slider-bottom-section'>
+                <input checked type='radio' name="slider-section-nav" value='slide-left'/>
+                <input type='radio' name="slider-section-nav" value='slide-right'/>
+                
                 <div id='menu-nav-slider'>
-                    <div><h2>Diapo new</h2></div>
+                    <div><h2>Diaporama de news</h2></div>
                     <nav>
                         <i class='fas fa-chevron-left slider-bottom-nav-fa'></i>
                         <i class='fas fa-chevron-right slider-bottom-nav-fa'></i>
                     </nav>
                 </div>
-                <div id="slider-bottom-ctnr">
-                        <img src="assets/images/middle-actu-bottom-item-2.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nihil, magni saepe adipisci sed, accusantium quia dolor, ab eius labore quibusdam quaerat nisi velit ullam est. Cumque repudiandae ex quisquam!</p>
+
+                <div id='slider-bottom-ctnr'>
+                    <div class='slider-bottom-img-ctnr'>
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/f/fc/Television_news_crew.jpg' alt='une image du slider' />
+                        <p>Un paragraphe avec du contenu en sous-titres de l'image du slider...</p>
+                    </div>
+                    <div class='slider-bottom-img-ctnr'>
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/f/fc/Television_news_crew.jpg' alt='une image du slider' />
+                        <p>Un paragraphe avec du contenu en sous-titres de l'image du slider...</p>
+                    </div>
+                    <div class='slider-bottom-img-ctnr'>
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/f/fc/Television_news_crew.jpg' alt='une image du slider' />
+                        <p>Un paragraphe avec du contenu en sous-titres de l'image du slider...</p>
+                    </div>
+                    <div class='slider-bottom-img-ctnr'>
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/f/fc/Television_news_crew.jpg' alt='une image du slider' />
+                        <p>Un paragraphe avec du contenu en sous-titres de l'image du slider...</p>
+                    </div>
+
+                    <div class='slider-bottom-img-ctnr'>
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/f/fc/Television_news_crew.jpg' alt='une image du slider' />
+                        <p>Un paragraphe avec du contenu en sous-titres de l'image du slider...</p>
+                    </div>
+                    <div class='slider-bottom-img-ctnr'>
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/f/fc/Television_news_crew.jpg' alt='une image du slider' />
+                        <p>Un paragraphe avec du contenu en sous-titres de l'image du slider...</p>
+                    </div>
                 </div>
-                <div id="slider-bottom-ctnr">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nihil, magni saepe adipisci sed, accusantium quia dolor, ab eius labore quibusdam quaerat nisi velit ullam est. Cumque repudiandae ex quisquam!</p>
-                </div>
-                <div id="slider-bottom-ctnr">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nihil, magni saepe adipisci sed, accusantium quia dolor, ab eius labore quibusdam quaerat nisi velit ullam est. Cumque repudiandae ex quisquam!</p>
-                </div>
-                <div id="slider-bottom-ctnr">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nihil, magni saepe adipisci sed, accusantium quia dolor, ab eius labore quibusdam quaerat nisi velit ullam est. Cumque repudiandae ex quisquam!</p>
-                </div>
-                <div id="slider-bottom-ctnr">
-                        <img src="" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nihil, magni saepe adipisci sed, accusantium quia dolor, ab eius labore quibusdam quaerat nisi velit ullam est. Cumque repudiandae ex quisquam!</p>
-                </div>
-                
             </section>
         </div>
-
-
-
-
-
-
-
-
-
 
         <script src='lib/all.min.js'></script>
     </body>

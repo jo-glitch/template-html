@@ -432,6 +432,8 @@ input[name="bottom-actus-section-nav"] {
 
 #slider-bottom-section {
     margin-bottom: 100px;
+    position: relative;
+    overflow-x: hidden;
 }
 
 #menu-nav-slider {
@@ -463,14 +465,60 @@ input[name="bottom-actus-section-nav"] {
 
 #slider-bottom-ctnr {
     display: flex;
-    overflow: hidden;
+    width: 130%;
 }
 
-.slider-bottom-img-ctnr {
-    margin-left: 50px;
+.slider-bottom-img-ctnr {  
+    margin: 1%;
+    position: relative;
 }
 
 .slider-bottom-img-ctnr img {
-    width: 250px;
-    height: 180px;
+    width: 98%;
+    height: auto;
+    margin: 1%;
+}
+
+#slider-bottom-section > input[name='slider-section-nav'] {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+}
+
+#slider-bottom-section > input[value='slide-right'] {
+    right: 0;
+}
+
+#slider-bottom-section > input[value='slide-left'] {
+    right: 30px;
+}
+
+#slider-bottom-section > input[value='slide-right']:checked ~ #slider-bottom-ctnr {
+    animation: slideRight 2s forwards;
+}
+
+#slider-bottom-section > input[value='slide-left']:checked ~ #slider-bottom-ctnr {
+    animation: slideLeft 2s forwards;
+}
+
+@keyframes slideLeft {
+    from {
+        margin-left: -30%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: -30%;
+    }
 }
