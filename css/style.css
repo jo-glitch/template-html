@@ -50,37 +50,6 @@ body {
     line-height: 2.2em
 }
 
-#face a:hover {
-    background-color: #3b5998;
-    border-radius: 50%;
-}
-#pic a:hover {
-    background-color: #BD081C;
-    border-radius: 50%;
-}
-#twit a:hover {
-    background-color: #0084b4;
-    border-radius: 50%;
-}
-#drib a:hover {
-    background-color: #e8534e;
-    border-radius: 50%;
-}
-#link a:hover {
-    background-color: #2867B2;
-    border-radius: 50%;
-}
-#goo a:hover {
-    background-color: #dd4b39;
-    border-radius: 50%;
-}
-#sky a:hover {
-    background-color: #3b5998;
-    border-radius: 50%;
-}
-
-
-
 #header-main-title {
     margin: 45px 0
 }
@@ -202,7 +171,7 @@ header > nav a {
     color: orange;
 }
 
-.actu-content > a {
+.actu-content > a, .bottom-actus-item-content a {
     padding: 10px;
     border: 1px solid orange;
     text-transform: uppercase;
@@ -381,55 +350,85 @@ header > nav a {
 }
 
 #bottom-actus-section {
-    margin: 50px 0; 
+    margin: 50px 0
 }
+/*
+TODO
+*/
+
+input[name="bottom-actus-section-nav"] {
+   width: 110px; 
+   height: 35px;
+   position: relative;
+   opacity: 0;
+}
+
 
 
 #bottom-actus-section > nav {
     background-color: #222;
     height: 35px;
+    margin-top: -40px 
 }
 
 #bottom-actus-section input[type="button"] {
     border: none;
-    background-color: #222;
     color: white;
+    background-color: #222;
     outline: none;
     height: 100%;
     font-size: 19px;
+    width: 110px
 }
 
-#bottom-actus-section input[type="button"]:hover {
+.bottom-actus-item {
+    display: none;
+}
+
+#bottom-actus-section > input[value='bottom-actus-press']:checked ~ nav > #bottom-actus-press-btn,
+#bottom-actus-section > input[value='bottom-actus-actus']:checked ~ nav > #bottom-actus-actus-btn, 
+#bottom-actus-section > input[value='bottom-actus-infos']:checked ~ nav > #bottom-actus-infos-btn
+{
     background-color: orange;
 }
 
-.contenu-bottom {
+#bottom-actus-section > input[value='bottom-actus-press']:checked ~ div > .bottom-actus-item-press,
+#bottom-actus-section > input[value='bottom-actus-actus']:checked ~ div > .bottom-actus-item-actus,
+#bottom-actus-section > input[value='bottom-actus-infos']:checked ~ div > .bottom-actus-item-infos
+{
+    display: block;
+}
+
+#bottom-actus-section > div {
     display: flex;
-    justify-content: space-between; 
-   
+    justify-content: space-between
 }
-.contenu-bottom > div {
-    
-    /* border: 2px black solid; */
 
-    width: 500px;
-    height: auto; 
-    margin: 50px 0;
-   padding: 10px;
-    
-    width: 100%;
+.bottom-actus-item {
+    width: 30%;
+}
+
+.bottom-actus-item-actus, .bottom-actus-item-infos {
+    display: none;
+}
+
+.bottom-actus-item img {
+    width: 98%;
     height: auto;
-    
-      
-    
+    margin: 1%;
 }
 
-.contenu-bottom img {
-    width: 100%;
-    height: auto;
-
+.bottom-actus-item-content {
+    margin: 1%;
 }
 
+.bottom-actus-item-content > .actu-date-and-comments {
+    margin: 30px 0;
+}
+
+.bottom-actus-item-content a {
+    color: grey
+}
 
 #slider-bottom-section {
     margin-bottom: 100px;
@@ -438,33 +437,33 @@ header > nav a {
 #menu-nav-slider {
     border: 1px solid;
     display: flex;
-    justify-content :space-between;
+    justify-content: space-between;
     align-items: center;
     background-color: #222;
     color: white;
     height: 30px;
 }
 
+
 #menu-nav-slider h2 {
-    margin:0;
+    margin: 0;
     text-transform: uppercase;
-    font-size: 20px;
-    padding: 10px 10px;
+    font-size: 18px;
+    padding: 10px;
 }
 
 .slider-bottom-nav-fa {
     background-color: orange;
     font-size: 10px;
-    padding: 10px 7px;
+    padding: 10px 10px;
     margin-top: 2px;
     margin-left: -3px;
     font-weight: bolder;
-    
-
 }
 
 #slider-bottom-ctnr {
     display: flex;
+    overflow: hidden;
 }
 
 .slider-bottom-img-ctnr {
@@ -474,7 +473,4 @@ header > nav a {
 .slider-bottom-img-ctnr img {
     width: 250px;
     height: 180px;
-}
-.contenu-bottom, span {
-    color: grey;
 }
