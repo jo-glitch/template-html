@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'GeosansLight';
+    src: url('../assets/fonts/GeosansLight.ttf')
+}
+
+@font-face {
+    font-family: 'NobileBold';
+    src: url('../assets/fonts/Nobile-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'NobileRegular';
+    src: url('../assets/fonts/Nobile-Regular.ttf')
+}
+
+h1, h2, h3 {
+    font-family: 'GeosansLight';
+}
+
+h5, p {
+    font-family: nobileRegular;
+}
+
 body {
     margin: 0
 } 
@@ -6,17 +29,18 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%
+    width: 100%;
 }
 
 #header-top {
     background-color: #353434;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    padding: 15px
 }
 
-#header-top nav {
+ #main-nav-menu {
     margin: 10px 0
 }
 
@@ -26,24 +50,28 @@ body {
     padding: 3px 7px 3px 5px
 }
 
-#header-top nav a {
+#header-top > nav a {
     text-transform: uppercase;
     border-right: 1px solid grey
 }
 
-#header-top nav a:last-child {
+#header-top > nav a:last-child {
     border-right: none
 }
 
+#main-nav-menu-small {
+    display: none;
+}
+
 #s-n-icons {
-    font-size: 30px;
+    font-size: 26px;
     margin-right: 6%
 }
 
 #s-n-icons div {
     background-color: #222222;
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     display: inline-block;
     margin-left: -6px;
     text-align: center;
@@ -70,14 +98,14 @@ body {
     color: grey
 }
 
-header > nav {
+#main-nav-menu {
     border-top: 1px solid silver;
     border-bottom: 1px solid silver;
     display: flex;
     justify-content: center
 }
 
-header > nav div {
+#main-nav-menu div {
     border-right: 1px solid silver;
     padding: 18px 18px 18px 8px
 }
@@ -101,11 +129,11 @@ header > nav div:hover:before {
 */
 
 
-header > nav div:first-child {
+#main-nav-menu div:first-child {
     border-left: 1px solid silver
 }
 
-header > nav a {
+#main-nav-menu a {
     text-decoration: none;
     color: black;
     text-transform: uppercase
@@ -484,7 +512,7 @@ input[name="bottom-actus-section-nav"] {
     top: 0;
     width: 20px;
     height: 20px;
-    opacity: 1;
+    opacity: 0;
 }
 
 #slider-bottom-section > input[value='slide-right'] {
@@ -522,3 +550,65 @@ input[name="bottom-actus-section-nav"] {
         margin-left: -30%;
     }
 }
+
+footer {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(34, 34, 34, 0.9);
+}
+
+footer h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+footer p, footer span {
+    color: silver;
+}
+
+footer input[type='text'] {
+    background-color: black;
+    width: 100%;
+    border: none;
+    color: silver;
+    outline: none;
+    font-size: 19px;
+    height: 25px;
+}
+
+footer input[type='submit'] {
+   margin-top: 10px; 
+   background-color: orange;
+   text-transform: uppercase;
+   color: white;
+   border: none;
+   outline: none;
+   padding: 4px 7px; 
+}
+
+
+#footer-left {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-left div:first-child {
+    width: 55%;
+}
+
+#footer-left div:last-child {
+    width: 35%;
+}
+
+#footer-right {
+    width: 25%;
+}
+
+#footer-left div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+   

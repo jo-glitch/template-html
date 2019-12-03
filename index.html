@@ -6,6 +6,7 @@
         <meta charset='utf-8' />
         <meta name="viewport" content="width=device-width, user-scalable=no"/>
         <link rel='stylesheet' href='css/style.css'/>
+        <link rel='stylesheet' href='css/mediaQueries.css'/>
         <link rel="icon" type="image/png" href="no-img copie.png" />
     </head>
 	
@@ -36,13 +37,20 @@
                     <h5>Blog d'actualité et de nouvelles mondiales</h5>
                 </div>
 
-                <nav>
+                <nav id='main-nav-menu'>
                     <div><i class="fas fa-caret-down"></i><a href='#'>Home</a></div>
                     <div><i class="fas fa-caret-down"></i><a href='#'>Pages</a></div>
                     <div><i class="fas fa-caret-down"></i><a href='#'>Element</a></div>
                     <div><i class="fas fa-caret-down"></i><a href='#'>Blog</a></div>
                     <div><i class="fas fa-caret-down"></i><a href='#'>Portfolio</a></div>
                     <div><i class="fas fa-caret-down"></i><a href='#'>Gallery</a></div>
+                </nav>
+
+                <nav id='main-nav-menu-small'>
+                    <select>
+                        <option value='item1'>Item 1</option>
+                        <option value='item2'>Item 2</option>
+                    </select>
                 </nav>
 
             </header>
@@ -111,6 +119,7 @@
                 </div>
             </section>
 
+            
             <section id='middle-article-section'>
                 <div id='middle-section-main'>
                     <h2>Titre section de gauche</h2>
@@ -518,6 +527,50 @@
                     </div>
                 </div>
             </section>
+
+            <footer>
+                <div id='footer-left'>
+                    <div>
+                        <h3>Global Magazine</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In culpa, voluptatum non mollitia modi rerum facere, laboriosam voluptas quasi doloribus porro ducimus ratione provident nulla ut quod veniam? Est, ipsam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas porro rem veniam quam explicabo et corporis magnam, hic ab, aspernatur sequi laborum reprehenderit fugiat accusantium ex ipsa nostrum consequuntur!</p>
+                    </div>
+                    <div>
+                        <h3>AMET PULVINAR DAPIDUS</h3>
+                        <p>
+                           StreetName and number<br>
+                           Ville<br>
+                           Code postal 
+                        </p>
+                        <p>
+                            <div>
+                               <span>
+                                    <i class="fas fa-phone-alt"></i> 
+                                    012525252525
+                                </span>
+                              
+                            </div> 
+                            <div>
+                               
+                                <span> 
+                                    <i class="fas fa-envelope"></i> 
+                                    jsfbklb@jsdvisbi.com
+                                </span>
+                            </div> 
+                        </p>
+                    </div>
+                </div>
+                <div id='footer-right'>
+                    <h3>MOLESTIE AUGUE DIAM</h3>
+                    <p>Souscrivez à la newsletter en tapant votre mail ci-dessous</p>
+                    <form>
+                        <input type='text' /><br>
+                        <input type='submit' value="S'inscrire"/>
+                    </form>
+                    
+
+                </div>
+            </footer>
         </div>
 
         <script src='lib/all.min.js'></script>
